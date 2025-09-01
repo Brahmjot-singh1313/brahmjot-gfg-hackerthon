@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.logo{
+    width: 20%;
+}
+.options{
+    display: flex;
+    gap: 1rem;
+
+}
+.options a{
+    text-decoration: none;
+    margin-right: .2rem;
+    color: black;
+}
+.options i{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.options a:hover{
+    color: rgb(99, 170, 69);
+}
+.info{
+    display: flex;
+    gap: 1.5rem;
+}
+.info #i {
+    display: flex;
+    font-size: 1.2rem;
+    cursor: pointer;
+    align-items: center;
+}
+.inquiry{
+    border-left: 1px solid gray;
+    padding-left: .5rem;
+    align-items: center;
+}
+.inquiry h6{
+    font-size: 1rem;
+}
+.inquiry h5{
+    font-size: 1.2rem;
+    color: rgb(99, 170, 69);
+}
+@media(max-width:1037px){
+    #hode{
+        display: none;
+    }
+}
+@media(max-width:696px){
+    .nav{
+        flex-direction: column;
+    }
+}
+@media(max-width:517px){
+    .options a{
+        font-size: .7rem;
+    }
+    .options i{
+        display: none;
+    }
+}
+@media(max-width:808px){
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:808px){
+    .test{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:543px){
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+}
+#home{
+    color: black;
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1552598715-7eeb9232a2ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 80%;
+    width: 70%;
+    background-size: cover;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2rem 2rem 2.5rem;
+}
+#home h1{
+    /* font-size: 5rem; */
+    font-weight: 400;
+    font-family: sans-serif;
+}
